@@ -1,10 +1,15 @@
 - id: print-arguments
-  name: print the arguments passed
+  name: Printing the arguments passed to the hook
   description: testing pre-commit hook creation
   entry: print-arguments
   language: python
 - id: update-submodules
-  name: update submodules
+  name: Updating submodules
   description: updates submodules in the repo prior to commit
   entry: update-submodules
-  language: system
+  language: python
+- id: merge-remote-submodule-updates
+  name: Merging remote submodule updates
+  description: Merges remote submodule updates
+  entry: merge-remote-submodule-updates
+  language: python

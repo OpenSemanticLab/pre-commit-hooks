@@ -38,7 +38,7 @@ or in case of the test hook created within this package:
 
 ```yaml
 -   repo: https://github.com/OpenSemanticLab/pre-commit-hooks
-    rev: v0.1.0  # Use the ref you want to point at
+    rev: v0.1.25  # Use the ref you want to point at
     hooks:
     - id: print-arguments
 ```
@@ -49,7 +49,12 @@ or in case of the test hook created within this package:
 Prints the arguments passed to the hook. Source: https://dev.to/jalvaradosegura/create-your-own-pre-commit-hook-3kh
 
 #### `update-submodules`
-Updates the submodules of the repository. Source: https://stackoverflow.com/a/5828396/1497139
+Transfers the state of the submodules tracked in the remote parent repository to the local repository, updating them. 
+Source: https://stackoverflow.com/a/5828396/1497139
+
+#### `merge-remote-submodule-updates`
+Updates the submodules of the repository by updating the state of the submodule tracked in the local parent repository 
+to match the most recent commit in the remote submodule repository.
 
 
 <!-- pyscaffold-notes -->

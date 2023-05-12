@@ -12,6 +12,7 @@ def main():
     args = parser.parse_args()
 
     print_arguments(args.filenames)
+    return 0  # retval 0 means success
 
 
 if __name__ == "__main__":
