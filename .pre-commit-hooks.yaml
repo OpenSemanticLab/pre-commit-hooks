@@ -3,3 +3,8 @@
   description: testing pre-commit hook creation
   entry: print-arguments
   language: python
+- id: update-submodules
+  name: update submodules
+  description: updates submodules in the repo prior to commit
+  entry: update-submodules
+  language: system

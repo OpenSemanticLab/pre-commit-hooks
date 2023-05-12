@@ -48,6 +48,9 @@ or in case of the test hook created within this package:
 #### `print-arguments`
 Prints the arguments passed to the hook. Source: https://dev.to/jalvaradosegura/create-your-own-pre-commit-hook-3kh
 
+#### `update-submodules`
+Updates the submodules of the repository. Source: https://stackoverflow.com/a/5828396/1497139
+
 
 <!-- pyscaffold-notes -->
 
