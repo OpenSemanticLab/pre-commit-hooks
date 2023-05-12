@@ -1,0 +1,5 @@
+- id: print-arguments
+  name: print the arguments passed
+  description: testing pre-commit hook creation
+  entry: print-arguments
+  language: python

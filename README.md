@@ -12,11 +12,41 @@
 
 [![Project generated with PyScaffold](https://img.shields.io/badge/-PyScaffold-005CA0?logo=pyscaffold)](https://pyscaffold.org/)
 
+
+
 # pre-commit-hooks
 
 > A collection of custom Git pre-commit hooks for the OpenSemanticLab / -World packages.
 
-A longer description of your project goes here...
+Some out-of-the-box hooks for pre-commit.
+
+See also: https://github.com/pre-commit/pre-commit
+
+
+### Using pre-commit-hooks with pre-commit
+
+Add this to your `.pre-commit-config.yaml`
+
+```yaml
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0  # Use the ref you want to point at
+    hooks:
+    -   id: trailing-whitespace
+    # -   id: ...
+```
+or in case of the test hook created within this package:
+
+```yaml
+-   repo: https://github.com/OpenSemanticLab/pre-commit-hooks
+    rev: v0.1.0  # Use the ref you want to point at
+    hooks:
+    - id: print-arguments
+```
+
+### Hooks available
+
+#### `print-arguments`
+Prints the arguments passed to the hook. Source: https://dev.to/jalvaradosegura/create-your-own-pre-commit-hook-3kh
 
 
 <!-- pyscaffold-notes -->
